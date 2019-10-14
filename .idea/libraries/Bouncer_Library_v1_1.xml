@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Bouncer-Library-v1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/Bouncer-Library-v1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
