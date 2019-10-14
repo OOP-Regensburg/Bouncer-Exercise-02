@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<map>
+    <bouncer x="1" y="14" />
+
+    <!-- Pile -->
+    <color x="0" y="14" value="GREEN" />
+    <color x="0" y="13" value="GREEN" />
+    <color x="0" y="12" value="GREEN" />
+
+    <!--  Wall -->
+
+    <color x="6" y="14" value="GREEN" />
+    <color x="7" y="14" value="RED" />
+    <color x="8" y="14" value="GREEN" />
+    <color x="9" y="14" value="GREEN" />
+    <color x="10" y="14" value="GREEN" />
+    <color x="11" y="14" value="GREEN" />
+    <color x="12" y="14" value="GREEN" />
+    <color x="13" y="14" value="GREEN" />
+    <color x="14" y="14" value="GREEN" />
+    <color x="6" y="13" value="GREEN" />
+    <color x="7" y="13" value="GREEN" />
+    <color x="8" y="13" value="GREEN" />
+    <color x="9" y="13" value="GREEN" />
+    <color x="10" y="13" value="GREEN" />
+    <color x="11" y="13" value="GREEN" />
+    <color x="12" y="13" value="GREEN" />
+    <color x="13" y="13" value="RED" />
+    <color x="14" y="13" value="GREEN" />
+    <color x="6" y="12" value="GREEN" />
+    <color x="7" y="12" value="GREEN" />
+    <color x="8" y="12" value="GREEN" />
+    <color x="9" y="12" value="GREEN" />
+    <color x="10" y="12" value="RED" />
+    <color x="11" y="12" value="GREEN" />
+    <color x="12" y="12" value="GREEN" />
+    <color x="13" y="12" value="GREEN" />
+    <color x="14" y="12" value="GREEN" />
+
+</map>
