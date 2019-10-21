@@ -15,9 +15,9 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer goes to the lake
-     * Pre-Condition: Bouncer is standing on the west side of the map, on the waterfront, facing east
-     * Post-Condition: Bouncer is standing above the first field of water, facing east.
+     * Bouncer geht zum See.
+     * Vorbedingung: Bouncer steht auf der Westseite der Karte, am Wasserrand, nach Osten ausgerichtet.
+     * Nachbedingung: Bouncer steht über dem ersten Wasserfeld, nach Osten ausgerichtet.
      */
     private void enterPool() {
         while (bouncer.canNotMoveRight()) {
@@ -26,9 +26,10 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer dives to the bottom of the lake.
-     * Pre-Condition: Bouncer is standing above the first field of water, facing east.
-     * Post-Condition: Bouncer stands at the bottom west of the lake facing east.
+
+     * Bouncer taucht auf den Grund des Sees.
+     * Vorbedingung: Bouncer steht über dem ersten Wasserfeld, nach Osten ausgerichtet.
+     * Nachbedingung: Bouncer steht am Grund des Sees, nach Osten ausgerichtet.
      */
     private void diveIn() {
         turnRight();
@@ -39,9 +40,9 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer goes out of the lake to the east end of the map
-     * Pre-Condition: Bouncer is standing at the south-east in the lake, under the water, facing east.
-     * Post-Condition: Bouncer stands on the east end of the map on the waterfront facing east.
+     * Bouncer verlässt den See am östlichen Ende der Karte.
+     * Vorbedingung: Bouncer steht im Südosten im See, unter Wasser, nach Osten gerichtet.
+     * Nachbedingung: Bouncer steht am östlichen Ende der Karte am Wasserrand, nach Osten gerichtet.
      */
     private void diveOut() {
         bouncer.turnLeft();
@@ -55,9 +56,9 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer clears the pool from the treasures
-     * Pre-Condition: Bouncer stands at the bottom west of the lake facing east.
-     * Post-Condition: Bouncer is standing at the south-east in the lake, under the water, facing east.
+     * Bouncer räumt den Pool von den Schätzen frei.
+    * Vorbedingung: Bouncer steht am Grund des Sees im Westen, nach Osten ausgerichtet.
+    * Nachbedingung: Bouncer steht im Südosten im See, unter Wasser, nach Osten gerichtet.
      */
     private void clearPool() {
         salvageLoot();
@@ -68,9 +69,9 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer checks for treasures and brings them to the surface.
-     * Pre-Condition: Bouncer stands on a treasure-field facing east.
-     * Post-Condition: Bouncer stands on the same field (without treasure) facing east.
+     * Bouncer sucht nach Schätzen und bringt sie an die Oberfläche.
+     * Vorbedingung: Bouncer steht auf einem Schatzfeld, nach Osten ausgerichtet.
+     * Nachbedingung: Bouncer steht auf dem gleichen Feld (ohne Schatz), nach Osten ausgerichtet.
      */
     private void salvageLoot() {
         if (bouncer.isOnFieldWithColor(FieldColor.RED)) {
@@ -82,9 +83,9 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer dives up to the suface of the lake
-     * Pre-Condition: Bouncer stands at the bottom of the lake facing east.
-     * Post-Condition: Bouncer is one field above the water facing north.
+     * Bouncer taucht bis zur Oberfläche des Sees.
+     * Vorbedingung: Bouncer steht auf dem Grund des Sees, nach Osten ausgerichtet.
+     * Nachbedingung: Bouncer ist ein Feld über dem Wasser, nach Norden ausgerichtet.
      */
     private void returnToSurface() {
         bouncer.turnLeft();
@@ -94,9 +95,9 @@ public class Schatzsuche extends BouncerApp {
     }
 
     /**
-     * Bouncer returns to the bottom of the lake
-     * Pre-Condition: Bouncer is one field above the water facing north.
-     * Post-Condition: Bouncer is at the bottom of the lake facing east.
+     * Bouncer kehrt auf den Grund des Sees zurück.
+     * Vorbedingung: Bouncer ist ein Feld über dem Wasser, nach Norden ausgerichtet.
+     * Nachbedingung: Bouncer befindet sich auf dem Grund des Sees, nach Osten ausgerichtet.
      */
     private void returnToGround() {
         bouncer.turnLeft();
@@ -107,7 +108,7 @@ public class Schatzsuche extends BouncerApp {
         bouncer.turnLeft();
     }
 
-    // makes Bouncer turn right.
+    // dreht Bouncer nach rechts
     private void turnRight() {
         for (int i = 0; i < 3; i++) {
             bouncer.turnLeft();
